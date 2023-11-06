@@ -1,0 +1,512 @@
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/*Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) { ... }
+
+/*Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) { ... }
+
+/*Large devices (desktops, 992px and up)*/
+/*@media (min-width: 992px) { ... }
+
+/* X-Large devices (large desktops, 1200px and up) */
+/*@media (min-width: 1200px) { ... }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+/*@media (min-width: 1400px) { ... } */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{
+    font-family: Raleway, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+}
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+body{
+    background-color: black;
+   /* color: whitesmoke; */
+   color:white;
+}
+
+/******** Background layers *********/
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    z-index: 3;
+    transition: 0.2s;
+}
+/******* Activate slide menu ********/
+@media (max-width: 479px) {  
+    .showcase.active{right:200px;}
+  }
+
+@media screen and (min-width: 480px) {
+    .showcase.active{right:300px;}
+}
+/***********************************/
+
+
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: 5;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+    z-index: 2;
+}
+
+
+.underlay{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 6;
+}
+
+
+/********** Body Content **********/
+
+.container-fluid{
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+}
+
+/********* Header **********/
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 3%;
+    height: 12%; 
+}
+
+@media (max-width: 379px) {  
+    h2 {font-size:1.52rem;} /*1rem = 16px*/
+  }
+
+  @media (min-width: 380px) {  
+    h2 {font-size:2rem;} /*1rem = 16px*/
+  }
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    h2 {font-size:2.3rem;} /*1rem = 16px*/
+  }
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    h2 {font-size:2.5rem;} /*1rem = 16px*/
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    h2 {font-size:2.6rem;} /*1rem = 16px*/
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    h2 {font-size:2.7rem;} /*1rem = 16px*/    
+  }
+
+.logo-col{
+    display: flex;
+    justify-content: left;
+    font-weight: 500;
+    /*align-items: baseline;*/
+    bottom: 0; 
+}
+
+@media (max-width: 450px) {  
+    .logo-col{padding-top: 1.9%;} 
+  }
+  @media (min-width: 451px) {  
+    .logo-col{padding-top: 1.3%;} 
+  }
+  @media (min-width: 544px) {  
+    .logo-col{padding-top: 1.2%;} 
+  }
+  @media (min-width: 568px) {  
+    .logo-col{padding-top: 1%;} 
+  }
+
+
+
+.toggle-col{
+    display: flex;
+    justify-content: right;
+    align-items:center;
+}
+
+
+.logo{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logo a:hover{
+    color: dimgray;
+}
+
+.toggle{
+    position: relative; 
+    cursor: pointer;
+
+}
+
+.toggle i{
+    font-size: 2.3rem;
+}
+
+@media (max-width: 379px) {  
+    .toggle i {font-size:1.5rem;} /*1rem = 16px*/
+  }
+
+@media (min-width: 380px) {  
+    .toggle i {font-size:2.0rem;} /*1rem = 16px*/
+  }
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    .toggle i {font-size:2.4rem;} /*1rem = 16px*/
+  }
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    .toggle i{font-size:2.5rem;} /*1rem = 16px*/
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .toggle i {font-size:2.6rem;} /*1rem = 16px*/
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .toggle i {font-size:2.7rem;} /*1rem = 16px*/    
+  }
+
+
+.toggle.active{
+}
+
+.toggle:hover{
+    color: dimgray;
+}
+
+/******** Header end ********/
+
+/******** BIO Text ********/
+
+.text-row{
+    margin-left: 3%; 
+    padding:3% 25% 0% 0%; 
+    justify-content: left;
+    align-items: center;
+}
+@media (max-width: 383px) {  
+    .text-row{padding:3% 25% 15% 1%; } 
+  }
+
+@media(max-width: 450px){
+    .text-row{padding:3% 25% 15% 1%; }
+}
+.text-col{
+  
+}
+.textWrapper{
+    padding: 2% 0% 30% 0%;
+}
+.textWrapper p{
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+@media(min-width: 450px){
+    .textWrapper p{
+        font-size:1.1rem;
+    }
+}
+
+/******* Smart links styling *******/
+
+.coverArt-row{
+    padding-top: 10%;   
+}
+.coverArt-col{
+    display: flex;
+    justify-content: center;
+}
+
+.coverArt-col img{
+    max-width: 170px;
+}
+/****** Cover art image size *******/
+@media (max-width: 383px) {  
+    .coverArt-col img{max-width: 155px;} 
+  }
+
+.boyfriendStoreTitle-col{
+    margin-top: 29px;
+    font-size: 25pt;
+    line-height: 1.25em; 
+    text-align: center;
+}
+
+@media (max-width: 383px) {  
+    .boyfriendStoreTitle-col{font-size: 17pt;} /*1rem = 16px*/
+  }
+
+.newBankeTitle-row{
+    margin-top: 2%;
+}
+
+.newBankeTitle-col{
+    font-size: 14pt;
+    font-weight: 500; 
+    text-align: center;
+}
+
+@media (max-width: 383px) {  
+    .newBankeTitle-col{font-size: 12pt;} /*1rem = 16px*/
+  }
+
+.smartLinks-col{
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.smartLinks-col a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+.hyperDspLink{
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    background: rgb(255 255 255 / 17%);
+    color: white;
+    /*font-size: 15px;*/
+    font-size: 0.87rem; 
+    font-weight: 500;
+    transition: .03s;
+    overflow: hidden;
+}
+
+@media (max-width: 383px) {  
+    .hyperDspLink {font-size:0.75rem;} /*1rem = 16px*/
+  }
+@media (max-width: 338px) {  
+    .hyperDspLink {font-size:0.62rem;} /*1rem = 16px*/
+}
+  
+.hyperShadow {
+    box-shadow: 0px 0px 25px rgb(0 0 0 / 35%);
+}
+
+.linkBox{
+    display: flex;
+    align-items: center;
+}
+.linkBox img{
+    display: block;
+    height: 62px;
+    box-shadow: 0px 0px 5px #000000;
+}
+@media (max-width: 383px) {  
+    .linkBox img{height:50px;} 
+  }
+
+.streamingServiceTitle{
+    flex: 1;
+    padding: 20px;
+}
+
+@media (max-width: 383px) {  
+    .streamingServiceTitle{padding:14px} 
+  }
+
+.arrow{
+    padding: 20px;
+}
+
+@media (max-width: 383px) {  
+    .arrow{padding:14px} 
+  }
+
+
+ 
+
+/******* Footer *******/
+
+.social-row{
+    width:100%;
+    bottom: 0;
+    position: absolute; 
+    padding:  7% 3%  3% 3%;
+}
+.social-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-col a{
+    color: whitesmoke;
+    transition: 0.5s;
+    font-size: 1.9rem;
+}
+
+@media (max-width: 383px) {  
+    .social-col a{ font-size: 1.6rem;}
+}
+
+@media (min-width: 384px) {  
+    .social-col a{ font-size: 1.6rem;}
+}
+@media (min-width: 768px){
+    .social-col a {font-size: 1.9rem}
+}
+
+
+
+.social-col a:hover{
+    color: dimgray;
+    cursor: pointer;
+}
+
+/******* Alternative footer for index.html ********/
+.fillOut-row{
+    width:100%;
+    bottom: 0;
+    position: absolute; 
+   
+}
+.fillOut-col{
+    padding:  3% 3%  10% 3%;
+}
+   
+
+/********* Music.html *********/
+.spotify-row{
+    padding:3% 8% 8% 8%; 
+}
+
+.spotify-col{
+    opacity: 0.8;
+}
+.spotify-col iframe{
+    border-radius: 10px;
+}
+/********* Contact.html **********/
+
+.form-row{
+    align-items: center;
+    padding:3% 10% 10% 10%; 
+}
+
+/********* Menu Section **********/
+.menuSection{
+    position: absolute;
+    top:0; 
+    right:0; 
+    width: 300px;
+    height: 100%;
+    min-height: 100vh;
+
+}
+.container{
+    height: 100%;
+    z-index: 1;
+    line-height: 3rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 85% 0% 70% 0%;
+}
+
+.container .row{
+    display: flex;
+    align-items: center;
+}
+
+.container a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 479px) {  
+    .menuSection{width:200px;}
+   /* .container{width:200px}*/
+    .container a {font-size:1.7rem;} /*1rem = 16px*/
+  }
+
+.container a:hover{
+    color: dimgray;
+}
+
+
+/******************* EPK *******************/
+.epk-row{
+    padding-top: 6%;
+}
+
+.bandImage-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.epkText-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
