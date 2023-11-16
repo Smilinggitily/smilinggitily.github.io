@@ -143,7 +143,7 @@ body{
 .logo-col{
     display: flex;
     justify-content: left;
-    font-weight: 1000;
+    font-weight: 500;
     /*align-items: baseline;*/
     bottom: 0; 
 }
