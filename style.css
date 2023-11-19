@@ -19,14 +19,24 @@ No media query for `xs` since this is the default in Bootstrap */
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 *{
     font-family: Raleway, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 
-}
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Special+Elite&display=swap');
+*{
+    font-family: 'Courier Prime', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+} 
 
 .icon::before {
     display: inline-block;
@@ -37,7 +47,7 @@ No media query for `xs` since this is the default in Bootstrap */
 body{
     background-color: #000000;
    /* color: whitesmoke; */
-   color:#ffffff
+   color:#dedede
 }
 
 /******** Background layers *********/
@@ -92,7 +102,7 @@ body{
     height: 100%;
     object-fit: cover;
     background-color: black;
-    opacity: 0;
+    opacity: 0.4;
     z-index: 6;
 }
 
@@ -177,7 +187,7 @@ body{
 
 .logo a{
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
 }
 .logo a:hover{
     color: rgb(49, 49, 49);
@@ -471,7 +481,7 @@ body{
 
 .container a{
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     font-size: 2rem;
     cursor: pointer;
 }
