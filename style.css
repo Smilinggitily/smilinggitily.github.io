@@ -118,9 +118,10 @@ body{
 /********* Header **********/
 .header-row{
     display: flex;
-    justify-content: space-between;
-    margin: 5% 3%;
-    height: 12%; 
+    justify-content: center; 
+    padding: 6% 3%;
+    text-align: center;
+    /* height: 12%;  */
 }
 
 @media (max-width: 379px) {  
@@ -152,9 +153,8 @@ body{
 
 .logo-col{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     font-weight: 500;
-    /*align-items: baseline;*/
     bottom: 0; 
 }
 
