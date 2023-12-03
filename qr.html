@@ -29,9 +29,25 @@
 </head>
 <body>
 <section class="showcase">
-    <video playsinline muted loop autoplay>
+    <video id="myVideo" playsinline loop>
         <source type="video/mp4" src="video/smiling backdroppromo vert 3.mp4">
     </video>
+    <button id="playButton">Play Video</button>
+
+<script>
+  window.onload = function() {
+    var video = document.getElementById("myVideo");
+    var playButton = document.getElementById("playButton");
+
+    playButton.addEventListener("click", function() {
+      video.play().then(function() {
+        console.log("Video is playing");
+      }).catch(function(error) {
+        console.error("Error playing the video:", error);
+      });
+    });
+  };
+</script>
     <div class="underlay"></div>
     <div class="overlay"></div>
     <div class="container-fluid">
@@ -162,6 +178,7 @@
 
 <!-- Add Pixel Events to the spotify link click handler -->
 <script type="text/javascript">
+
     var button = document.getElementById('spotifyLink');
     button.addEventListener(
       'click', 
@@ -206,7 +223,5 @@
             menuToggle.classList.toggle('active')
         }) 
 </script>
-
-
 </body>
 </html>
