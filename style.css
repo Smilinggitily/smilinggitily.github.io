@@ -17,18 +17,6 @@ No media query for `xs` since this is the default in Bootstrap */
 /*@media (min-width: 1400px) { ... } */
 
 
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-*{
-    font-family: Raleway, serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-
-} */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Special+Elite&display=swap');
 *{
     font-family: 'Courier Prime', sans-serif;
@@ -179,6 +167,12 @@ body{
     align-items:center;
 }
 
+.eventTitle{
+    text-decoration: none;
+}
+.event-col a:hover{
+    color: rgb(49, 49, 49);
+}
 
 .logo{
     cursor: pointer;
@@ -196,7 +190,6 @@ body{
 .toggle{
     position: relative; 
     cursor: pointer;
-
 }
 
 .toggle i{
@@ -315,19 +308,17 @@ body{
     .newBankeTitle-col{font-size: 12pt;} /*1rem = 16px*/
   }
 
-.smartLinks-col{
+.smartLinks{
     font-weight: 700;
     overflow: hidden;
 }
 
-.smartLinks-col a{
+.smartLinks a{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
-.smartLinks-col a:hover{
-    color: rgb(49, 49, 49);
-}
+
 
 .hyperDspLink{
     display: block;
@@ -352,18 +343,22 @@ body{
 }
   
 .hyperShadow {
-    box-shadow: 0px 0px 25px rgb(0 0 0 / 35%);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 35%);
 }
 
 .linkBox{
     display: flex;
     align-items: center;
 }
-.linkBox img{
+
+.linkBox:hover{
+    color: rgb(49, 49, 49);
+}
+/* .linkBox img{
     display: block;
     height: 62px;
     box-shadow: 0px 0px 5px #000000;
-}
+} */
 @media (max-width: 383px) {  
     .linkBox img{height:50px;} 
   }
