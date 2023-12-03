@@ -325,7 +325,9 @@ body{
     color: inherit;
     cursor: pointer;
 }
-
+.smartLinks-col a:hover{
+    color: rgb(49, 49, 49);
+}
 
 .hyperDspLink{
     display: block;
