@@ -29,7 +29,7 @@
 </head>
 <body>
 <section class="showcase">
-    <video playsinline muted loop autoplay>
+    <video playsinline loop autoplay>
         <source type="video/mp4" src="video/smiling backdroppromo vert 3.mp4">
     </video>
     <div class="underlay"></div>
@@ -37,42 +37,12 @@
     <div class="container-fluid">
             <!-- Header and menu button -->
             <div class="row header-row">
-                <div class="col-1 col-sm-1 col-md-3 col-lg-3 col-xl-4">
+                <div class="col-7 col-sm-7 col-md-6 col-lg-4 col-xl-4 logo-col">
+                    <h2 class="logo"><a href="index.html"></a>8/12 på DUNK</h2>
                 </div>
-                <div class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-4 event-col">
-                    <h2 class="eventTitle">
-                            Smiling<br><br>Malmö 13/3 <br> Oslo 14/3 <br> Trondheim 15/3 <br><br>Malmö<br>&darr;
-                    </h2>
-                    <div class="smartLinks">
-                        <a id="spotifyLink" onclick="facebookTrackEvent('clickOut');facebookTrackEvent('clickSpotify');" href="https://secure.tickster.com/sv/n7194ba5uccacy4/products"> 
-                            <span class="hyperDspLink hyperShadow">
-                                <div class="linkBox"> 
-                                    <div class="streamingServiceTitle">
-                                        Tickets
-                                    </div>
-                                    <div class="arrow">
-                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </span>
-                            <div class="hiddenElementToFixWhatsCalledBorderCollapse"></div>
-                        </a> 
-                        <a id="spotifyLink" onclick="facebookTrackEvent('clickOut');facebookTrackEvent('clickSpotify');" href="https://www.facebook.com/events/1673920873136520">   
-                            <span class="hyperDspLink hyperShadow">
-                                <div class="linkBox"> 
-                                    <div class="streamingServiceTitle">
-                                        Facebook Event
-                                    </div>
-                                    <div class="arrow">
-                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </span>
-                            <div class="hiddenElementToFixWhatsCalledBorderCollapse"></div>
-                        </a> 
-                    </div> 
+                <div class="col-3 col-sm-3 col-md-4 col-lg-6 col-xl-6">
                 </div>
-                <div class="col-1 col-sm-1 col-md-3 col-lg-3 col-xl-4">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 toggle-col">
                     <div class="toggle">
                         <!-- <i onclick="changeIcon(this)" class="fa-solid fa-bars"></i> -->
                     </div>
@@ -187,7 +157,6 @@
 
 <!-- Add Pixel Events to the spotify link click handler -->
 <script type="text/javascript">
-
     var button = document.getElementById('spotifyLink');
     button.addEventListener(
       'click', 
@@ -232,5 +201,7 @@
             menuToggle.classList.toggle('active')
         }) 
 </script>
+
+
 </body>
 </html>
